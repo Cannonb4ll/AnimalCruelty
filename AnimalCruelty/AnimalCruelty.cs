@@ -2,13 +2,13 @@
 using System.Threading.Tasks;
 using CitizenFX.Core;
 using static CitizenFX.Core.UI.Screen;
-using CalloutAPI;
-using AnimalCruelty.Utils;
+using FivePD.API;
+using Utilities = AnimalCruelty.Utils.Utilities;
 
 namespace AnimalCruelty
 {
-    [CalloutProperties("Animal Cruelty", "Dennis Smink", "1.0.0", Probability.Medium)]
-    public class AnimalCruelty : CalloutAPI.Callout
+    [CalloutProperties("Animal Cruelty", "Dennis Smink", "1.0.0")]
+    public class AnimalCruelty : Callout
     {
         Ped suspect, victim;
         
@@ -29,7 +29,7 @@ namespace AnimalCruelty
             float offsetX = rnd.Next(100, 700);
             float offsetY = rnd.Next(100, 700);
 
-            InitBase(World.GetNextPositionOnStreet(Game.PlayerPed.GetOffsetPosition(new Vector3(offsetX, offsetY, 0))));
+            InitInfo(World.GetNextPositionOnStreet(Game.PlayerPed.GetOffsetPosition(new Vector3(offsetX, offsetY, 0))));
 
             ShortName = "Animal cruelty";
             CalloutDescription = "We've got a call that someone is beating up their dog!";
@@ -37,9 +37,9 @@ namespace AnimalCruelty
             StartDistance = 50f;
         }
 
-        public async override Task Init()
+        public override async Task OnAccept()
         {
-            OnAccept();
+            InitBlip();
 
             // Throw out a few notifications
             ShowNotification("We've received a call that someone is beating up their dog.");
