@@ -1,0 +1,9 @@
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\bin\Debug\AnimalCruelty.net.dll
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\bin\Debug\AnimalCruelty.net.pdb
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\bin\Debug\CalloutAPI.net.dll
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\bin\Debug\CitizenFX.Core.dll
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\obj\Debug\AnimalCruelty.csprojAssemblyReference.cache
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\obj\Debug\AnimalCruelty.csproj.CoreCompileInputs.cache
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\obj\Debug\AnimalCruelty.csproj.CopyComplete
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\obj\Debug\AnimalCruelty.net.dll
+C:\Users\Dennis\RiderProjects\AnimalCruelty\AnimalCruelty\obj\Debug\AnimalCruelty.net.pdb
